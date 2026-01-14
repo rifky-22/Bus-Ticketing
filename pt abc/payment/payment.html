@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pembayaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dashboard/dashboard.css">
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PT. ABC</div>
+    <div class="user-info">
+      <div class="user-name" id="userName">tes123</div>
+      <div class="user-category" id="userCategory">Penumpang</div>
+    </div>
+  </header>
+
+  <main class="content payment-content">
+    <div class="breadcrumb">Home / Pembayaran</div>
+
+    <!-- Detail Tiket -->
+    <section class="payment-panel">
+      <div class="summary">
+        <h3>Detail Tiket</h3>
+        <div class="summary-row"><span class="label">Nama Penumpang</span><span class="value">Rifky</span></div>
+        <div class="summary-row"><span class="label">Rute</span><span class="value">Jakarta → Bandung</span></div>
+        <div class="summary-row"><span class="label">Tanggal</span><span class="value">2026-02-14</span></div>
+        <div class="summary-row"><span class="label">Penumpang</span><span class="value">2</span></div>
+        <div class="summary-row"><span class="label">Armada</span><span class="value">MegaBus</span></div>
+        <div class="summary-row"><span class="label">Nomor Kursi</span><span class="value">2A, 2B</span></div>
+        <div class="summary-row"><span class="label">Harga per orang</span><span class="value">Rp 100.000</span></div>
+        <div class="summary-row total"><span class="label">Total</span><span class="value">Rp 200.000</span></div>
+      </div>
+      
+      <!-- Metode Pembayaran -->
+      <div class="payment-methods">
+        <h3>Pilih Metode Pembayaran</h3>
+        <form class="methods">
+          <label class="pm">
+            <input type="radio" name="pm" checked>
+            <span class="pm-label">Transfer Bank</span>
+          </label>
+          <label class="pm">
+            <input type="radio" name="pm">
+            <span class="pm-label">Kartu Kredit / Debit</span>
+          </label>
+          <label class="pm">
+            <input type="radio" name="pm">
+            <span class="pm-label">E-Wallet</span>
+          </label>
+
+          <div class="actions" style="margin-top:16px;">
+            <a href="../boarding/boarding.html" class="btn primary">Bayar & Lihat E-ticket</a>
+            <a href="../seat/seat.html" class="btn">Kembali</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

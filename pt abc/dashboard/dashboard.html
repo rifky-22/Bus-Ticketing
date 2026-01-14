@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PT. ABC</div>
+    <div class="user-info">
+      <div class="user-name" id="userName">tes123</div>
+      <div class="user-category" id="userCategory">Penumpang</div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="breadcrumb">Home / Pencarian Tiket</div>
+
+    <section class="search-panel">
+      <!-- Pencarian Tiket -->
+      <form class="search-form" id="searchForm">
+        <h2>Pencarian Tiket</h2>
+        <div class="row">
+          <label>
+            Kota Asal
+            <select id="origin" required>
+              <option value="" disabled selected>Pilih kota asal</option>
+            </select>
+          </label>
+          <label>
+            Kota Tujuan
+            <select id="destination" required>
+              <option value="" disabled selected>Pilih kota tujuan</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Tanggal Keberangkatan
+            <input type="date" id="departDate" required>
+          </label>
+          <label>
+            Jumlah Penumpang
+            <input type="number" id="passengers" min="1" value="1" required>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Cari Tiket</button>
+          <button type="button" id="resetBtn" class="btn">Reset</button>
+        </div>
+      </form>
+      <!-- Side Panel -->
+      <aside class="side-panels">
+        <div class="panel">
+          <h3>Popular Routes</h3>
+          <div class="pill-list" id="popularList"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Recent Search</h3>
+          <ul class="recent-list" id="recentList">
+            <li style="color:var(--muted)">Belum ada pencarian.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Hasil -->
+    <section class="results">
+      <h3 style="margin:0 0 8px; color:var(--accent)">Hasil Pencarian</h3>
+      <div class="cards" id="resultsArea">
+        <!-- dummy results -->
+      </div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

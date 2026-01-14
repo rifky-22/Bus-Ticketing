@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isi Data Penumpang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dashboard/dashboard.css">
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PT. ABC</div>
+    <div class="user-info">
+      <div class="user-name" id="userName">tes123</div>
+      <div class="user-category" id="userCategory">Penumpang</div>
+    </div>
+  </header>
+
+  <main class="content detail-content">
+    <div class="breadcrumb">Home / Pencarian Tiket / Detail Tiket & Data Penumpang</div>
+
+    <!-- Detail Tiket  -->
+    <section class="detail-panel">
+      <div class="summary">
+        <h3>Detail Tiket</h3>
+        <div class="summary-row"><span class="label">Rute</span><span class="value">Jakarta → Bandung</span></div>
+        <div class="summary-row"><span class="label">Tanggal</span><span class="value">2026-02-14</span></div>
+        <div class="summary-row"><span class="label">Waktu</span><span class="value">08:00 - 3 Jam</span></div>
+        <div class="summary-row"><span class="label">Armada</span><span class="value">MegaBus</span></div>
+      </div>
+      
+      <!-- Form Data Penumpang -->
+      <form id="passengerForm" class="passenger-form" action="../seat/seat.html" method="get">
+        <h3>Form Data Penumpang</h3>
+
+        <div class="field">
+          <label for="contactEmail">Email</label>
+          <input id="contactEmail" name="email" type="email" placeholder="nama@contoh.com" required>
+        </div>
+
+        <div class="field">
+          <label for="contactPhone">Nomor HP</label>
+          <input id="contactPhone" name="phone" type="tel" placeholder="0812xxxx" required>
+        </div>
+
+        <div class="passenger-list" id="passengerList">
+          <h4>Penumpang</h4>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="addPassengerBtn" class="btn">+ Tambah Penumpang</button>
+        </div>
+
+        <div class="form-actions" style="margin-top:12px;">
+          <button type="submit" class="btn primary">Pesan Sekarang → Pilih Kursi</button>
+          <a href="../dashboard/dashboard.html" class="btn">Batal</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="detail.js"></script>
+</body>
+</html>

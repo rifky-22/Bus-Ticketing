@@ -1,0 +1,131 @@
+.detail-content { max-width: 980px; margin: 20px auto; padding: 0 18px 40px; }
+
+.detail-panel {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.summary {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+.summary h3 { 
+  margin-top:0; 
+  color: var(--accent); 
+}
+
+.summary-row { 
+  display:flex; 
+  justify-content:space-between; 
+  padding:8px 0; 
+  border-bottom:1px dashed #f0f2f6; 
+}
+
+.summary-row:last-child { 
+  border-bottom: none; 
+}
+
+.summary .label { 
+  color: var(--muted); 
+  font-size:13px; 
+}
+
+.summary .value { 
+  font-weight:700; 
+  color:var(--accent); 
+}
+
+.passenger-form {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+.passenger-form h3 { 
+  margin-top:0; 
+  color: var(--accent);
+}
+
+.field { 
+  display:flex; 
+  flex-direction:column; 
+  margin-bottom:10px; 
+}
+
+.field label { 
+  font-size:13px; 
+  color:var(--muted); 
+  margin-bottom:6px; 
+}
+
+.field input, .field select { 
+  padding:10px 12px; 
+  border-radius:8px; 
+  border:1px solid #e6e8f0; 
+  background:#fff; 
+  font-size:14px; 
+}
+
+.passenger-list h4 { 
+  margin: 0 0 8px 0; 
+  color:var(--accent); 
+}
+.passenger-item { 
+  padding:10px; 
+  border-radius:8px; 
+  background:#fbfbfb; 
+  border:1px solid #f0f2f6; 
+  margin-bottom:8px; 
+}
+
+.pi-row { 
+  display:flex; 
+  gap:8px; 
+  align-items:flex-end; 
+}
+
+.field.small { 
+  flex:1; 
+  margin-bottom:0; 
+}
+
+.remove-wrap { 
+  display:flex; 
+  align-items:flex-end; 
+}
+
+.btn.remove { 
+  background:#ffecec; 
+  color:#b02a37; 
+  padding:8px 10px; 
+  border-radius:8px; 
+  border:none; 
+  cursor:pointer; 
+}
+
+.form-actions { 
+  display:flex; 
+  gap:10px; 
+  align-items:center; 
+}
+
+@media (max-width:900px){
+  .detail-panel { 
+    grid-template-columns: 1fr; 
+  }
+
+  .pi-row { 
+    flex-direction:column; 
+    align-items:stretch; 
+  }
+
+  .remove-wrap { 
+    align-self:flex-start; 
+  }
+}

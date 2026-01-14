@@ -1,0 +1,102 @@
+.boarding-content { max-width: 980px; margin: 20px auto; padding: 0 18px 40px; }
+.boarding-pass { display:grid; grid-template-columns: 1fr 320px; gap:16px; align-items:start; }
+
+.bp-left {
+  background: var(--card);
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+}
+.booking-code {
+  font-size:20px;
+  font-weight:800;
+  color:var(--accent-2);
+  margin:10px 0 18px 0;
+  background:#f4f7ff;
+  padding:10px;
+  border-radius:8px;
+  display:inline-block;
+}
+
+.bp-left h3 { 
+  color:var(--accent); 
+}
+.info-row { 
+  display:flex; 
+  justify-content:space-between; 
+  padding:8px 0; 
+  border-bottom:1px dashed #f0f2f6; 
+}
+.info-row:last-child { 
+  border-bottom:none; 
+}
+
+.info-row .label { 
+  color:var(--muted); 
+  font-size:13px; 
+}
+.info-row .value { 
+  font-weight:700; 
+  color:var(--accent); 
+}
+
+.bp-right {
+  background: var(--card);
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center;
+}
+
+.qr-wrap { 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  padding:6px; 
+  background:#fff; 
+  border-radius:6px; 
+}
+
+.qr { 
+  border:6px solid #fff; 
+  box-shadow:0 6px 18px rgba(16,24,40,0.04); 
+}
+
+.ticket-preview { 
+  width:100%; 
+}
+
+.ticket-preview h4 { 
+  margin:0 0 8px 0; 
+  color:var(--accent); 
+}
+
+.ticket-preview .tp-row { 
+  display:flex; 
+  justify-content:space-between; 
+  padding:6px 0; 
+  border-bottom:1px dashed #f0f2f6; 
+}
+
+.ticket-preview .tp-row:last-child { 
+  border-bottom:none; 
+}
+
+.actions .btn { 
+  text-decoration:none; 
+  display:inline-flex; 
+  align-items:center; 
+  justify-content:center; 
+}
+
+@media (max-width:900px){
+  .boarding-pass { 
+    grid-template-columns: 1fr; 
+  }
+  .bp-right { 
+    order: -1; 
+  }
+}

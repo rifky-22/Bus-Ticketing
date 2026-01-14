@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pilih Kursi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dashboard/dashboard.css">
+  <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PT. ABC</div>
+    <div class="user-info">
+      <div class="user-name" id="userName">tes123</div>
+      <div class="user-category" id="userCategory">Penumpang</div>
+    </div>
+  </header>
+
+  <main class="content seat-content">
+    <div class="breadcrumb">Home / Pilih Kursi</div>
+
+    <!-- Detail Tiket -->
+    <section class="seat-panel">
+      <aside class="trip-info">
+        <h3>Detail Tiket</h3>
+        <div class="info-row"><span class="label">Nama Penumpang</span><span class="value">Rifky</span></div>
+        <div class="info-row"><span class="label">Rute</span><span class="value">Jakarta → Bandung</span></div>
+        <div class="info-row"><span class="label">Tanggal</span><span class="value">2026-02-14</span></div>
+        <div class="info-row"><span class="label">Waktu</span><span class="value">08:00 - 3 Jam</span></div>
+        <div class="info-row"><span class="label">Armada</span><span class="value">MegaBus</span></div>
+        <div class="note" style="margin-top:10px; color:var(--muted); font-size:13px;">Klik kursi yang tersedia untuk memilih. Kursi berwarna merah artinya sudah terpesan.</div>
+      </aside>
+
+      <section class="seat-map">
+        <h3>Seat Map</h3>
+        <div class="bus">
+          <div class="row">
+            <div class="seat available">1A</div>
+            <div class="seat booked">1B</div>
+            <div class="aisle"></div>
+            <div class="seat available">1C</div>
+            <div class="seat booked">1D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat available">2A</div>
+            <div class="seat available">2B</div>
+            <div class="aisle"></div>
+            <div class="seat available">2C</div>
+            <div class="seat booked">2D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat booked">3A</div>
+            <div class="seat booked">3B</div>
+            <div class="aisle"></div>
+            <div class="seat available">3C</div>
+            <div class="seat available">3D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat booked">4A</div>
+            <div class="seat booked">4B</div>
+            <div class="aisle"></div>
+            <div class="seat booked">4C</div>
+            <div class="seat booked">4D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat available">5A</div>
+            <div class="seat available">5B</div>
+            <div class="aisle"></div>
+            <div class="seat available">5C</div>
+            <div class="seat booked">5D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat booked">6A</div>
+            <div class="seat booked">6B</div>
+            <div class="aisle"></div>
+            <div class="seat booked">6C</div>
+            <div class="seat available">5D</div>
+          </div>
+
+          <div class="row">
+            <div class="seat available">7A</div>
+            <div class="seat available">7B</div>
+            <div class="aisle"></div>
+            <div class="seat available">7C</div>
+            <div class="seat available">7D</div>
+          </div>
+        </div>
+
+        <div class="legend">
+          <span class="legend-item"><span class="legend-box avail"></span> Tersedia</span>
+          <span class="legend-item"><span class="legend-box booked"></span> Terpesan</span>
+        </div>
+
+        <div class="seat-actions" style="margin-top:16px;">
+          <a href="../payment/payment.html" class="btn primary">Lanjut ke Pembayaran</a>
+          <a href="../detail/detail.html" class="btn">Kembali</a>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
